@@ -1,0 +1,27 @@
+
+
+.of-row
+{
+	max-width:114rem;
+	margin:0 auto;
+}
+.of-row:not(:last-child) {
+    margin-bottom: 8rem; }
+.of-row::after
+ {
+    content: "";
+    display: table;
+    clear: both; 
+}
+.of-row [class*="col-"], [class^="col-"]
+{
+    float: left; 
+}
+ [class*="col-"],[class^="col-"]:not(:last-child)
+{
+     margin-right: 6rem;
+}
+.of-row .col-1of4
+{
+    width: calc((100% - (4 * 12rem) / 4); 
+}
